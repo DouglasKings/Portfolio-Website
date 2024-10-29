@@ -1,0 +1,49 @@
+/* A reset style sheet, also known as a CSS reset, is a concise set of CSS rules designed to minimize browser
+   inconsistencies in rendering HTML elements by resetting the styling of all HTML elements to a consistent baseline.
+   This approach helps ensure that web pages render consistently across different browsers, addressing the issue that
+   each browser applies its own default styles to unstyled elements. These defaults can vary significantly between browsers,
+   leading to discrepancies in how web content appears across different environments.*/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+  /* Basic reset for specific elements to ensure consistent appearance across browsers */
+  /* Remove margin and padding from all elements to eliminate browser defaults */
+  form, input, textarea, button {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }

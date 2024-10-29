@@ -1,0 +1,540 @@
+/* Define custom properties for site colors using a pseudo class root */
+:root {
+    --site-color-01: #c13584; /* Primary brand color for general use */
+    --site-color-01-hover: #9e2f6e; /* Color to be used when hovering over elements */
+}
+
+/* Base font size for easier rem calculations */
+html {
+    font-size: 62.5%; /* Sets 1rem = 10px for easier calculations */
+}
+
+/* Global body styles */
+body {
+    background-color: #1d1d1d; /* Dark background color for the page */
+}
+
+/* Background image overlay */
+body::after {
+    position: absolute; /* Positioned relative to its containing block */
+    width: 0; /* No width, just used for background images */
+    height: 0; /* No height, just used for background images */
+    overflow: hidden; /* Hides any overflow content */
+    z-index: -1; /* Places it behind other content */
+    content: url(/assets/img/Github.png) url(/assets/img/linkedin.png) url(/assets/img/discord.png); /* Multiple background images */
+}
+
+.wrapper-main {
+    width: 1100px; /* Fixed width for main content wrapper */
+    margin: 0 auto; /* Centers the wrapper horizontally */
+}
+
+h1 {
+    font-size: 2.6rem; /* Font size for main headings */
+    line-height: 1.5rem; /* Line height for readability */
+    color: #fff; /* White text color */
+    font-family: Roboto; /* Font family for consistency */
+    font-weight: 600; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+}
+
+h2 {
+    font-size: 2.8rem; /* Slightly larger font size for secondary headings */
+    line-height: 1.5rem; /* Line height for readability */
+    color: #fff; /* White text color */
+    font-family: Roboto; /* Font family for consistency */
+    font-weight: 600; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+}
+
+h3 {
+    font-size: 2.6rem; /* Font size for tertiary headings */
+    line-height: 1.5rem; /* Line height for readability */
+    color: #fff; /* White text color */
+    font-family: Roboto; /* Font family for consistency */
+    font-weight: 600; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+}
+
+/* Paragraph and link styles */
+p {
+    font-size: 1.4rem; /* Medium font size for paragraphs */
+    line-height: 1.75; /* Line height for readability */
+    color: #fff; /* White text color */
+    font-family: Roboto; /* Font family for consistency */
+}
+
+a {
+    font-size: 1.4rem; /* Medium font size for links */
+    line-height: 1.75; /* Line height for readability */
+    color: #fff; /* White text color */
+    font-family: Roboto; /* Font family for consistency */
+    cursor: pointer; /* Pointer cursor to indicate clickable links */
+}
+
+/* Header main container */
+.header-main {
+    position: fixed; /* Fixed position at the top of the viewport */
+    top: 0; /* Aligns the header to the top */
+    width: 100%; /* Full width of the viewport */
+    height: 60px; /* Height of the header */
+    background-color: #b1b1b1d0; /* Semi-transparent background color */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    z-index: 1000; /* Ensures header is above other elements */
+}
+
+/* Header logo container */
+.header-main-logo {
+    width: fit-content; /* Width adjusts based on content */
+    height: 100%; /* Full height of the header */
+    padding-left: 60px; /* Padding on the left for logo space */
+    display: flex; /* Flexbox layout for logo alignment */
+}
+
+.header-main-logo img {
+    margin-top: 15px; /* Margin above the image */
+    height: 90px; /* Height of the logo image */
+    align-self: center; /* Vertically centers the image */
+}
+
+/* Navigation menu */
+.header-main-nav {
+    width: fit-content; /* Width adjusts based on content */
+    height: 100%; /* Full height of the header */
+}
+
+.header-main-nav ul {
+    list-style: none; /* Removes default list styling */
+}
+
+.header-main-nav ul li {
+    display: inline; /* Inline list items */
+    float: left; /* Floats items horizontally */
+}
+
+.header-main-nav ul li a {
+    padding: 0 10px; /* Horizontal padding around links */
+    font-family: "Roboto", cursive; /* Font family for navigation links */
+    font-size: 2.0rem;
+    line-height: 60px; /* Line height matches header height */
+    color: #000; /* Black text color */
+    display: block; /* Block-level link */
+    height: 100%; /* Full height of the header */
+}
+
+.header-main-nav ul li a:hover {
+    color: #c13584; /* Color change on hover */
+}
+
+/* Social media icons */
+.header-main-sm {
+    width: fit-content; /* Width adjusts based on content */
+    height: 100%; /* Full height of the header */
+    padding-right: 60px; /* Padding on the right for social icons */
+    display: flex; /* Flexbox layout for icon alignment */
+    align-items: center; /* Vertically center icons */
+    column-gap: 10px; /* Space between icons */
+}
+
+.header-main-sm-git {
+    width: 20px; /* Size of GitHub icon */
+    height: 20px; /* Size of GitHub icon */
+    background-image: url(/assets/img/Github.png); /* Background image for GitHub icon */
+    background-repeat: no-repeat; /* Prevents repeating background image */
+    background-size: cover; /* Ensures the background image covers the entire area */
+}
+
+.header-main-sm-in {
+    width: 20px; /* Size of LinkedIn icon */
+    height: 20px; /* Size of LinkedIn icon */
+    background-image: url(/assets/img/linkedin.png); /* Background image for LinkedIn icon */
+    background-repeat: no-repeat; /* Prevents repeating background image */
+    background-size: cover; /* Ensures the background image covers the entire area */
+}
+
+.header-main-sm-dis {
+    width: 20px; /* Size of Discord icon */
+    height: 20px; /* Size of Discord icon */
+    background-image: url(/assets/img/discord.png); /* Background image for Discord icon */
+    background-repeat: no-repeat; /* Prevents repeating background image */
+    background-size: cover; /* Ensures the background image covers the entire area */
+}
+
+.header-main-sm-git:hover {
+    background-image: url(/assets/img/Github.png); /* Ensures the same background image on hover */
+}
+
+.header-main-sm-in:hover {
+    background-image: url(/assets/img/linkedin.png); /* Ensures the same background image on hover */
+}
+
+.header-main-sm-dis:hover {
+    background-image: url(/assets/img/discord.png); /* Ensures the same background image on hover */
+}
+
+/* Footer section */
+.footer-main {
+    width: 100%; /* Full width of the viewport */
+    padding: 60px 0 100px; /* Vertical padding around footer content */
+    background-color: #141414; /* Dark background color */
+}
+
+.footer-main-flex {
+    display: flex; /* Flexbox layout for footer content */
+    justify-content: center; /* Center content horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* Footer testimony section */
+.footer-testimony {
+    flex-basis: 20%; /* Sets the width of the testimony section */
+    display: flex; /* Flexbox layout for content */
+    justify-content: center; /* Center content horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.footer-testimony img {
+    border-radius: 80px;
+ }
+ 
+ .my-images{
+    height: 150px;
+    width: 150px;
+ }
+
+.footer-testimony p {
+    text-align: center; /* Center-aligns text */
+    font-size: 1.6rem; /* Font size for text */
+    padding: 20px 20px 0; /* Padding around text */
+}
+
+/* Get in touch section */
+.footer-getintouch {
+    padding: 10px 20px; /* Padding around the button */
+    margin: 40px 0 60px; /* Margin below the section */
+    border: 2px solid #fff; /* White border around the button */
+    font-weight: 600; /* Bold text for the button */
+    transition: all ease-in-out 200ms; /* Smooth transition for all properties */
+}
+
+.footer-getintouch:hover {
+    border: 2px solid var(--site-color-01); /* Change border color on hover */
+}
+
+/* Footer sitemap section */
+.footer-sitemap {
+    flex-basis: 100%; /* Full width for sitemap section */
+    display: flex; /* Flexbox layout for sitemap items */
+}
+
+.footer-sitemap a {
+    line-height: 30px; /* Line height for links */
+}
+
+.footer-sitemap a:hover {
+    opacity: 0.8; /* Slightly dim links on hover */
+}
+
+.footer-sitemap ul:nth-child(1) {
+    border-left: 4px solid var(--site-color-01); /* Left border for the first column */
+    padding-left: 20px; /* Padding on the left side of the first column */
+}
+
+/* Sitemap columns */
+.footer-sitemap ul:nth-child(1), .footer-sitemap ul:nth-child(2) {
+    flex-basis: 220px; /* Width of the first two columns */
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 340px; /* Wider width for the third column */
+}
+
+.footer-sitemap p {
+    text-transform: uppercase; /* Uppercase text for <p> elements inside footer-sitemap */
+}
+
+.email p {
+    text-transform: lowercase; /* Lowercase text for <p> elements inside .email */
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1; /* Allows the fourth column to grow and fill remaining space */
+}
+
+.footer-sitemap ul:nth-child(4) p {
+    text-align: right; /* Right-aligns text in the fourth column */
+}
+
+/* Burger menu and button for mobile */
+.burger-menu, .burger-menu-btn {
+    display: none; /* Hidden by default */
+}
+
+/* Main container for the contact form */
+.contact-form-main {
+    width: 100%; /* Full width of the parent container */
+    max-width: 100%; /* Maximum width of the form */
+    margin: 30px auto 0; /* Center form horizontally with top margin */
+    padding: 20px; /* Padding inside the form */
+    background-color: #f9f9f9; /* Light grey background color */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: -2px 2px 4px #000; /* Shadow for depth */
+}
+
+/* Styles for the form within the contact form container */
+.contact-form-main form {
+    display: flex; /* Flexbox layout for form elements */
+    flex-direction: column; /* Stacks form elements vertically */
+}
+
+/* Style for form labels */
+.contact-form-main label {
+    font-size: 1.6rem; /* Font size for labels */
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below each label */
+}
+
+/* Styles for input fields and textareas */
+.contact-form-main input, .contact-form-main textarea {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Space inside input fields */
+    margin-bottom: 15px; /* Space below each input field */
+    border: 1px solid #111; /* Border color for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 1.6rem; /* Font size for text */
+}
+
+/* Styles for input fields and textareas when focused */
+.contact-form-main input:focus,
+.contact-form-main textarea:focus {
+    border-color: var(--site-color-01-hover); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Styles for the submit button */
+.contact-form-main button {
+    padding: 10px 15px; /* Space inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: var(--site-color-01); /* Background color for the button */
+    color: white; /* White text color */
+    font-size: 1.6rem; /* Font size for button text */
+    text-align: center; /* Center text inside the button */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Styles for the button on hover */
+.contact-form-main button:hover {
+    background-color: var(--site-color-01-hover); /* Change background color on hover */
+}
+
+/* MEDIA QUERIES */
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px) {
+    .burger-menu-btn {
+        display: block; /* Show burger menu button on mobile */
+        margin-left: 10px; /* Margin on the left */
+        width: 50px; /* Width of the button */
+        height: 50px; /* Height of the button */
+        background-image: url(/assets/Icons/burger-bar.png), url(/assets/Icons/close.png); /* Background images for open and close states */
+        background-size: cover; /* Cover entire area with background images */
+        background-repeat: no-repeat; /* Prevent repeating of background images */
+        background-position: center, center left 50px; /* Position images within button */
+    }
+
+    .burger-menu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position covering the viewport */
+        width: 100%; /* Full width */
+        height: 100vh; /* Full viewport height */
+        z-index: 900; /* Below header but above other content */
+        background-color: #111; /* Dark background color */
+    }
+
+    .burger-menu ul {
+        width: 100%; /* Full width of the burger menu */
+        height: calc(100vh - 60px); /* Height minus the header */
+        display: flex; /* Flexbox layout */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        align-content: flex-start; /* Align items at the start */
+    }
+
+    .burger-menu ul li {
+        flex-basis: 100%; /* Full width of each menu item */
+        border-top: 2px solid #000; /* Top border for separation */
+    }
+
+    .burger-menu ul li:last-child {
+        border-bottom: 2px solid #000; /* Bottom border for the last item */
+    }
+
+    .burger-menu ul li a {
+        display: block; /* Block-level element */
+        height: 100%; /* Full height of the item */
+        font-size: 3rem; /* Larger font size for readability */
+        padding: 30px 0; /* Padding around text */
+        flex-basis: 100%; /* Full width for links */
+        text-align: center; /* Center-aligns text */
+    }
+
+    .wrapper-main {
+        width: calc(100% - 40px); /* Adjust width for padding */
+    }
+
+    /* Header logo container */
+    .header-main-logo {
+        padding-left: 20px; /* Reduced padding for logo */
+    }
+
+    /* Navigation menu */
+    .header-main-nav {
+        display: none; /* Hide navigation menu on mobile */
+    }
+
+    /* Social media icons */
+    .header-main-sm {
+        padding-right: 20px; /* Reduced padding for social icons */
+    }
+
+    /* Footer testimony section */
+    .footer-testimony {
+        display: none; /* Hide testimony section on mobile */
+    }
+
+    /* Get in touch section */
+    .footer-getintouch {
+        margin: 0 0 60px; /* Adjust margin for mobile */
+    }
+
+    /* Footer sitemap section */
+    .footer-sitemap {
+        flex-wrap: wrap; /* Wrap items to fit mobile screen */
+    }
+
+    .footer-sitemap ul:nth-child(1) {
+        border-left: none; /* Remove left border for mobile */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    /* Sitemap columns */
+    .footer-sitemap ul:nth-child(1), .footer-sitemap ul:nth-child(2), .footer-sitemap ul:nth-child(3) {
+        flex-basis: 100%; /* Full width for each column */
+        text-align: center; /* Center-align text */
+        padding-bottom: 20px; /* Bottom padding for spacing */
+    }
+
+    .footer-sitemap p {
+        padding: 0 20px; /* Padding around text */
+    }
+
+    .footer-sitemap ul:nth-child(4) p {
+        text-align: center; /* Center-align text in the fourth column */
+    }
+
+    .contact-form-main {
+        margin: 0 15px 30px; /* Adjust margin for mobile screens */
+        padding: 15px; /* Reduced padding inside the form */
+        box-shadow: none; /* Remove shadow for cleaner look */
+    }
+
+    .contact-form-main label {
+        font-size: 1.4rem; /* Smaller font size for labels on mobile */
+    }
+
+    .contact-form-main input, .contact-form-main textarea {
+        font-size: 1.4rem; /* Adjust font size for inputs on mobile */
+    }
+
+    .contact-form-main button {
+        padding: 12px 20px; /* Adjust padding for the button on mobile */
+        font-size: 1.4rem; /* Adjust font size for the button text */
+    }
+}
+
+/* Low Resolution Tablets and iPads */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Adjustments for low-resolution tablets and iPads */
+    .header-main {
+        height: 60px; /* Header height for tablets */
+    }
+
+    .header-main-nav ul li a {
+        font-size: 1.4rem; /* Slightly larger font size for tablet links */
+    }
+
+    .footer-main {
+        padding: 40px 0 80px; /* Increased padding for footer on tablets */
+    }
+
+    .footer-testimony {
+        display: none; /* Show testimony section on tablets */
+    }
+
+    .contact-form-main {
+        margin: 20px auto; /* Adjust margin around the form */
+        padding: 15px; /* Adjust padding inside the form */
+    }
+}
+
+/* Tablets in Landscape Mode and Small Laptops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjustments for tablets in landscape mode and small laptops */
+    .header-main {
+        height: 70px; /* Increased header height for better visibility */
+    }
+
+    .header-main-nav ul li a {
+        font-size: 1.6rem; /* Larger font size for links on tablets and small laptops */
+    }
+
+    .footer-main {
+        padding: 50px 0 100px; /* Increased padding for footer */
+    }
+
+    .footer-testimony {
+        flex-basis: 50%; /* Adjust width of testimony section for tablets and small laptops */
+    }
+
+    .contact-form-main {
+        margin: 30px auto; /* Increased margin around the form */
+        padding: 20px; /* Increased padding inside the form */
+    }
+}
+
+/* Laptops and Desktops */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* Adjustments for laptops and desktops */
+    .header-main {
+        height: 80px; /* Maximized header height for larger screens */
+    }
+
+    .header-main-nav ul li a {
+        font-size: 1.8rem; /* Largest font size for links on laptops and desktops */
+    }
+
+    .footer-main {
+        padding: 60px 0 120px; /* Maximized padding for footer */
+    }
+
+    .footer-testimony {
+        flex-basis: 33.33%; /* Adjust width of testimony section for larger screens */
+    }
+
+    .contact-form-main {
+        margin: 40px auto; /* Maximized margin around the form */
+        padding: 25px; /* Maximized padding inside the form */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    

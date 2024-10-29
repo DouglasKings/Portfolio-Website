@@ -1,0 +1,476 @@
+/* Main section styling */
+main {
+    width: 100%; /* Full width of the container */
+    height: calc(100vh - 60px); /* Full viewport height minus the top margin */
+    background-color: #1a253a; /* Dark blue background color */
+    margin-top: 60px; /* Margin at the top to push content down */
+    background-image: url(/assets/img/3d-cartoon.png), url(/assets/img/Pic\ 1.jpg); /* Multiple background images */
+    background-size: 90vh, cover; /* Sizes for background images: first image 90vh, second image cover */
+    background-repeat: no-repeat; /* Prevents background images from repeating */
+    background-position: bottom left calc(50% + 80px), center; /* Positions background images */
+    display: flex; /* Flexbox layout for children */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    z-index: 100; /* Ensures this element appears above other elements */
+    column-gap: 220px; /* Space between flex items */
+}
+
+/* Styling for h1 inside main-intro */
+main .main-intro h1 {
+    font-size: 9.6rem; /* Large font size for headings */
+    line-height: 1; /* Line height for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Styling for paragraphs inside main */
+main p {
+    font-size: 1.8rem; /* Font size for paragraphs */
+    line-height: 1.75; /* Line height for better readability */
+    max-width: 550px; /* Maximum width of paragraphs */
+}
+
+/* Styling for anchor tags inside main */
+main a {
+    margin-top: 30px; /* Space above the link */
+    font-size: 1.8rem; /* Font size for the link */
+    display: block; /* Block level for full width */
+    height: 36px; /* Fixed height */
+    line-height: 36px; /* Align text vertically in the center */
+    background-color: var(--site-color-01); /* Background color using a CSS variable */
+    padding: 0px 20px; /* Horizontal padding */
+    width: fit-content; /* Width adjusts to the content */
+}
+
+/* Hover effect for anchor tags */
+main a:hover {
+    background-color: var(--site-color-01-hover); /* Change background color on hover */
+}
+
+/* Styling for paragraphs inside main-quotes */
+main .main-quotes p {
+    border-left: 4px solid var(--site-color-01); /* Left border with color */
+    padding-left: 10px; /* Space inside the left border */
+    margin: 40px 0; /* Vertical margin around the paragraph */
+}
+
+/* Margin adjustment for the second paragraph inside main-quotes */
+main .main-quotes p:nth-child(2) {
+    margin-left: 100px; /* Extra left margin for the second quote */
+}
+
+/* Padding for main-intro section */
+main .main-intro {    
+    padding-bottom: 8vh; /* Padding at the bottom */
+}
+
+/* Padding for main-quotes section */
+main .main-quotes {    
+    padding-bottom: 8vh; /* Padding at the bottom */
+}
+
+/* CATEGORY SECTION */
+.index-category {
+    width: 100%; /* Full width of the container */
+    padding: 60px 0; /* Vertical padding */
+    background-color: #fff; /* White background color */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    column-gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Wrap items if they exceed container width */
+}
+
+/* Styling for paragraphs inside index-category */
+.index-category p {
+    color: #111; /* Text color */
+    text-align: center; /* Center align text */
+    padding-bottom: 40px; /* Space below the paragraph */
+    flex-basis: 100%; /* Full width for paragraphs */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 2.2rem; /* Font size for the category heading */
+}
+
+/* Styling for index-category-box items */
+.index-category-box {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    background-color: #111; /* Dark background color */
+    background-repeat: no-repeat; /* Prevent image repeat */
+    background-size: cover; /* Cover the box with the background image */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Relative positioning for child elements */
+}
+
+/* Background image for the second index-category-box */
+.index-category-box:nth-child(2) {
+    background-image: url(/assets/img/software-engineer.jpg); /* Background image URL */
+}
+
+/* Background image for the third index-category-box */
+.index-category-box:nth-child(3) {
+    background-image: url(/assets/img/Web.jpg); /* Background image URL */
+}
+
+/* Background image for the fourth index-category-box */
+.index-category-box:nth-child(4) {
+    background-image: url(/assets/img/3d-portrait-adorable-cartoon-baby-boy.jpg); /* Background image URL */
+}
+
+/* Background image for the fifth index-category-box */
+.index-category-box:nth-child(5) {
+    background-image: url(/assets/img/full-shot-girl-spending-time-outdoors.jpg); /* Background image URL */
+}
+
+/* Dark overlay for index-category-box items */
+.dark-overlay {
+    position: absolute; /* Absolute positioning to cover the box */
+    top: 0; /* Top edge */
+    right: 0; /* Right edge */
+    bottom: 0; /* Bottom edge */
+    left: 0; /* Left edge */
+    background-color: #1a253a; /* Dark background color */
+    opacity: 0.5; /* Semi-transparent */
+    transition: all ease-in-out 200ms; /* Smooth transition for opacity change */
+}
+
+/* Hover effect for dark overlay */
+.index-category-box:hover .dark-overlay  {
+    opacity: 0; /* Hide overlay on hover */
+}
+
+/* Styling for h3 inside index-category-box */
+.index-category-box h3 {
+    font-size: 2.2rem; /* Font size for headings */
+    line-height: 1.5; /* Line height for readability */
+    text-align: center; /* Center align text */
+    text-shadow: -2px 2px 4px #000; /* Text shadow for readability */
+    z-index: 100; /* Ensure text appears above overlay */
+}
+
+/* ABOUT SECTION */
+.index-about {
+    width: 100%; /* Full width of the container */
+    padding: 60px 0; /* Vertical padding */
+    background-color: #1a253a; /* Dark blue background color */
+}
+
+/* Flexbox layout for index-about */
+.index-about-flex {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    column-gap: 60px; /* Space between items */
+}
+
+/* Styling for images inside index-about-img */
+.index-about-img img {
+    width: 300px; /* Fixed width for images */
+    border-radius: 300px; /* Circular border radius */
+}
+
+/* Text container inside index-about */
+.index-about-text {
+    flex-basis: 455px; /* Fixed width for text container */
+}
+
+/* Paragraphs inside index-about-text */
+.index-about-text p {
+    padding: 20px 0; /* Vertical padding for paragraphs */
+}
+
+/* Styling for anchor tags inside index-about-text */
+.index-about-text a {
+    font-size: 1.8rem; /* Font size for links */
+    display: block; /* Block level for full width */
+    height: 36px; /* Fixed height */
+    line-height: 36px; /* Center text vertically */
+    background-color: var(--site-color-01); /* Background color using a CSS variable */
+    padding: 0 20px; /* Horizontal padding */
+    width: fit-content; /* Width adjusts to the content */
+}
+
+/* Hover effect for anchor tags */
+.index-about-text a:hover {
+    background-color: var(--site-color-01-hover); /* Change background color on hover */
+}
+
+/* Styling for skill bars inside index-about-skill */
+.index-about-skill {
+    flex-basis: 350px; /* Fixed width for skill container */
+}
+
+/* Styling for skill bars */
+.index-about-skill-bar {
+    width: 100%; /* Full width of the container */
+    height: 20px; /* Fixed height */
+    border: 4px solid #0b0f16; /* Border color */
+}
+
+/* Fill for skill bars */
+.index-about-skill-bar-fill {
+    height: 100%; /* Full height of the container */
+    background-color: var(--site-color-01); /* Background color using a CSS variable */
+}
+
+/* Skill bar widths for different skills */
+.C-- { width: 60%; } /* Width for C-- skill */
+.Java { width: 55%; } /* Width for Java skill */
+.MySQL { width: 80%; } /* Width for MySQL skill */
+.htmlcss { width: 80%; } /* Width for HTML/CSS skill */
+.Anime { width: 72%; } /* Width for Anime skill */
+.C { width: 65%; } /* Width for C skill */
+.Adobe { width: 70%; } /* Width for Adobe skill */
+
+/* Portfolio Section Styling */
+.portfolio-section {
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #1a253a;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    width: calc(33.33% - 40px); /* Three items per row with spacing */
+    transition:  transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img .portfolio-item video{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.8rem;
+    margin: 15px 0 10px;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.portfolio-item a {
+    background-color: var(--site-color-01);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+    background-color: var(--site-color-01-hover);
+}
+
+.portfolio-item video {
+    width: 100%;
+    height: 200px; /* or your desired fixed height */
+}
+
+/* MEDIA QUERIES */
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px) {
+    main {
+        align-items: flex-end; /* Align items to the bottom */
+    }
+
+    main .main-intro {
+        padding-bottom: 8vh; /* Padding at the bottom of the intro section */
+    }
+    
+    main .main-intro h1 {
+       font-size: 5rem; /* Smaller font size for headings on mobile */
+       line-height: 1.25; /* Adjust line height for readability on smaller screens */
+       text-align: center; /* Center-align text */
+    }
+    
+    main p {
+        text-align: center; /* Center-align text in paragraphs */
+        padding: 0 20px; /* Horizontal padding */
+        line-height: 1.25; /* Adjust line height for readability on smaller screens */
+    }
+    
+    main a {
+        margin: 30px auto; /* Center align links horizontally and space from top */
+    }
+      
+    main .main-quotes {    
+        display: none; /* Hide quotes section on mobile */
+    }
+
+    /* CATEGORY SECTION */
+    .index-category {
+        padding: 40px 0 20px; /* Adjust padding for mobile */
+        row-gap: 10px; /* Space between rows of category boxes */
+    }
+    
+    .index-category p {
+        padding-bottom: 20px; /* Reduced padding for category heading */
+    }
+    
+    .index-category-box {
+        width: 95%; /* Make category boxes nearly full width */
+        height: 160px; /* Reduced height for category boxes */
+    }   
+    
+   /* ABOUT SECTION */
+    .index-about-flex {
+        flex-wrap: wrap; /* Wrap items on smaller screens */
+        row-gap: 20px; /* Space between rows of about section */
+    }
+
+    .index-about-img {
+        width: 60%; /* Width adjustment for image container */
+    }
+
+    .index-about-img img {
+        width: 100%; /* Make image fill its container */
+    }
+
+    .index-about-text {
+        flex-basis: 100%; /* Full width for text container */
+    }
+
+    .index-about-text h2 {
+        text-align: center; /* Center-align heading text */
+    }
+
+    .index-about-text p {
+        text-align: center; /* Center-align paragraphs */
+    }
+
+    .index-about-text a {
+        margin: 0 auto 10px; /* Center-align links and adjust bottom margin */
+    }
+
+} 
+
+/* Adjustments for larger smartphones or small tablets */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    /* Adjustments for screens between 601px and 767px */
+    
+    main {
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    main .main-intro h1 {
+        font-size: 5rem; /* Adjust font size for medium screens */
+    }
+
+    main p {
+        font-size: 1.6rem; /* Adjust font size for medium screens */
+    }
+
+    .index-category {
+        padding: 40px 0; /* Adjust padding for medium screens */
+        row-gap: 15px; /* Space between rows */
+    }
+
+    .index-category-box {
+        width: 90%; /* Make category boxes almost full width */
+        height: 180px; /* Slightly larger height for category boxes */
+    }
+
+    .index-about-flex {
+        flex-wrap: wrap; /* Wrap items on medium screens */
+        row-gap: 20px; /* Space between rows */
+    }
+
+    .portfolio-item {
+        width: calc(50% - 30px); /* Two items per row with spacing */
+    }
+}
+
+/* Adjustments for tablets or small desktops */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Adjustments for screens between 768px and 991px */
+    
+    main {
+        background-size: 70vh, cover; /* Adjust background size */
+        column-gap: 150px; /* Reduce gap between columns */
+    }
+
+    main .main-intro h1 {
+        font-size: 6rem; /* Adjust font size for larger tablets */
+    }
+
+    main p {
+        font-size: 1.4rem; /* Adjust font size for larger tablets */
+    }
+
+    .index-category {
+        padding: 50px 0; /* Increase padding */
+        column-gap: 10px; /* Space between columns */
+    }
+
+    .index-category-box {
+        width: 200px; /* Fixed width for category boxes */
+        height: 200px; /* Fixed height for category boxes */
+    }
+
+    .index-about-flex {
+        column-gap: 20px; /* Space between items */
+    }
+
+    .portfolio-item {
+        width: calc(33.33% - 40px); /* Three items per row with spacing */
+    }
+}
+
+/* Adjustments for tablets or smaller desktop monitors */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Adjustments for screens between 992px and 1199px */
+    
+    main {
+        background-size: 80vh, cover; /* Adjust background size */
+        column-gap: 180px; /* Increase gap between columns */
+    }
+
+    main .main-intro h1 {
+        font-size: 8rem; /* Adjust font size for larger tablets or small desktops */
+    }
+
+    main p {
+        font-size: 1.6rem; /* Adjust font size */
+    }
+
+    .index-category {
+        padding: 50px 0; /* Increase padding */
+        column-gap: 15px; /* Space between columns */
+    }
+
+    .index-category-box {
+        width: 220px; /* Fixed width for category boxes */
+        height: 220px; /* Fixed height for category boxes */
+    }
+
+    .index-about-flex {
+        column-gap: 40px; /* Space between items */
+    }
+
+    .portfolio-item {
+        width: calc(33.33% - 40px); /* Four items per row with spacing */
+    }
+}
+
+

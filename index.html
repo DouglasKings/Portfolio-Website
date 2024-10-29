@@ -1,0 +1,344 @@
+<!DOCTYPE html> <!-- Declares this document to be HTML5 -->
+<html lang="en"> <!-- Specifies the language of this document (English) -->
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character set to be used; UTF-8 covers almost all characters and symbols -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the website responsive on mobile devices by setting the width of the page to follow the screen-width of the device (which will vary depending on the device), and sets the zoom level when first loaded by the browser -->
+    <title> Douglas Kings Portfolio</title> <!-- Sets the title of the webpage, displayed in the tab of the browser -->
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> <!-- Links to the favicon icon for the site -->
+    
+    <!-- This is how we link to fonts using a CDN (Content Delivery Network) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnect to fonts.googleapis.com to improve performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect to fonts.gstatic.com with CORS (Cross-Origin Resource Sharing) to improve performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- Link to Google Fonts for Roboto, including various weights and italic styles -->
+    <!-- Link to our stylesheets for styling the webpage -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- Link to CSS reset stylesheet to ensure consistent styling across browsers -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to main CSS stylesheet for overall styling -->
+    <link rel="stylesheet" href="css/index.css"> <!-- Link to additional CSS stylesheet for specific styling on the index page -->
+</head>
+
+<body>
+
+     <!-- Start of the navigation menu -->
+      <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li> <!-- Navigation link to the home page -->
+            <li><a href="#services">SERVICES</a></li> <!-- Navigation link to the gallery section (placeholder) -->
+            <li><a href="#about">ABOUT ME</a></li> <!-- Navigation link to the about us section (placeholder) -->
+            <li><a href="#contact">CONTACT ME</a></li> <!-- Navigation link to the contact section (placeholder) -->
+        </ul>
+      </nav>
+      <!-- End of the navigation menu -->   
+       
+    <!-- The header (top) of our website -->
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="/assets/img/golden-crown.png" alt="Kings logo"> <!-- Logo image for the site with alternative text "Kings" -->
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li> <!-- Navigation link to the home page -->
+                    <li><a href="#services">SERVICES</a></li> <!-- Navigation link to the gallery section (placeholder) -->
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#about">ABOUT ME</a></li> <!-- Navigation link to the about us section (placeholder) -->
+                    <li><a href="#contact">CONTACT ME</a></li> <!-- Navigation link to the contact section (placeholder) -->
+                </ul>
+            </nav>                 
+        </div> 
+        
+        <!-- Social media links with icons -->
+        <div class="header-main-sm">
+            <a href="https://github.com"><div class="header-main-sm-git"></div></a> <!-- Discord icon link -->
+            <a href="https://www.linkedin.com"><div class="header-main-sm-in"></div></a> <!-- GitHub icon link -->
+            <a href=https://discord.com><div class="header-main-sm-dis"></div></a> <!-- LinkedIn icon link -->
+            <div class="burger-menu-btn"></div>
+        </div>
+    </header>
+
+    <!-- The Hero Section of our website -->
+    <main>
+        <div id="home" class="main-intro">
+            <h1>Welcome<br>to Kings <br>Animation</h1> <!-- Main heading with line breaks for styling -->
+            <p>A seasoned professional with extensive experience in <br>Software Engineering, Web development and graphic design, proficient in Animation. Expert in Adobe Creative Suite, Anime Studio Pro 11, Blender, MySQL, Java, C and C++ for integrated multimedia projects.</p> <!-- Introduction paragraph with line breaks -->
+            <a href="#portfolio">MY WORK</a> <!-- Link to the "My Work" section or page (placeholder) -->
+        </div>
+
+        <!-- Inspirational quotes section -->
+        <div class="main-quotes">
+            <p>“Why fit in when you were born to stand out?”<br><br>- Dr. Seuss</p> <!-- Quote from Dr. Seuss -->
+            <p>“Only you can control your future.”<br><br>- Dr. Seuss</p> <!-- Another quote from Dr. Seuss -->
+        </div>
+    </main>
+
+    <!-- The category section of our website -->
+    <section id="services" class="index-category">
+        <p>Categories</p> <!-- Heading for categories -->
+        <a href="#" class="index-category-box">
+            <div class="dark-overlay"></div> <!-- Dark overlay effect for the category box -->
+            <h3>Software Engineering</h3> <!-- Category name -->
+        </a>
+        <a href="#" class="index-category-box">
+            <div class="dark-overlay"></div> <!-- Dark overlay effect for the category box -->
+            <h3>Web Development</h3> <!-- Category name -->
+        </a>
+        <a href="#" class="index-category-box">
+            <div class="dark-overlay"></div> <!-- Dark overlay effect for the category box -->
+            <h3>Animator</h3> <!-- Category name -->
+        </a>
+        <a href="#" class="index-category-box">
+            <div class="dark-overlay"></div> <!-- Dark overlay effect for the category box -->
+            <h3>Graphic Designer</h3> <!-- Category name -->
+        </a>
+    </section>
+
+    <!-- The portfolio section of our website -->
+    < <section id="portfolio" class="portfolio-section">
+      <h2>My Projects</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img
+            src="/assets/Projects/Character.jpg"
+            alt="Character Design Project 1"
+          />
+          <h3>Character Design</h3>
+          <p>
+            Created a unique character concept, exploring the intricacies of
+            character design.
+          </p>
+          <a
+            href="/assets/Projects/Character.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="/assets/Projects/Characters.png"
+            alt="Character Design Project 2"
+          />
+          <h3>Character Design</h3>
+          <p>
+            Captured the essence of the character while adhering to strong
+            design principles.
+          </p>
+          <a
+            href="/assets/Projects/Characters.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="/assets/Projects/Kings character 1.jpg"
+            alt="Character Design Project 3"
+          />
+          <h3>Character Design</h3>
+          <p>
+            Developed a compelling and visually striking character to showcase
+            my artistic skills and creativity.
+          </p>
+          <a
+            href="/assets/Projects/Kings character 1.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="/assets/Projects/Kings character 2.jpg"
+            alt="Character Design Project 4"
+          />
+          <h3>Character Design</h3>
+          <p>
+            Created a distinctive and engaging character that brings imaginative
+            ideas to life through art.
+          </p>
+          <a
+            href="/assets/Projects/Kings character 2.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="portfolio-item">
+          <video height="200" controls>
+            <source
+              src="/assets/Projects/Gorillah.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h3>Animation</h3>
+          <p>
+            Crafting vibrant characters that transform creative visions into
+            captivating artwork
+          </p>
+          <a
+            href="/assets/Projects/Gorillah.mp4"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="/assets/Projects/Characters.png"
+            alt="Character Design Project 2"
+          />
+          <h3>Character Design</h3>
+          <p>
+            Captured the essence of the character while adhering to strong
+            design principles.
+          </p>
+          <a
+            href="/assets/Projects/Characters.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="portfolio-item">
+          <video height="200" controls>
+            <source
+              src="/assets/Projects/International School Of Uganda.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h3>Kings Animations Showcase Reel</h3>
+          <p>
+            Developed a compelling showcase reel for Kings Animations,
+            highlighting expertise in motion graphics and video production.
+          </p>
+          <a
+            href="/assets/Projects/International School Of Uganda.mp4"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- The about section of our website -->
+    <section id="about" class="index-about">
+        <div class="wrapper-main index-about-flex">
+            <div class="index-about-img">
+                <img src="/assets/img/Me.jpg" alt="Douglas Kings"> <!-- Profile image with alternative text "Douglas Kings" -->
+            </div>
+            <div class="index-about-text">
+                <h2>A BIT ABOUT ME.</h2> <!-- Subheading for the about section -->
+                <p>I’m a creative professional specializing in software engineering, web development, animation, and graphic design. By merging technical skills with artistic flair, I craft engaging and innovative digital experiences. Proficient in tools like Adobe Creative Suite, Blender, Anime Studio Pro 11, and programming languages such as Java, C, and C++, I excel at solving complex problems and delivering elegant solutions tailored to user needs.<br><br>
+                    Outside of work, I enjoy playing soccer, jogging, and exploring the latest tech trends. I believe that curiosity and continuous learning are essential in this dynamic field. Feel free to reach out if you're interested in exploring collaborations or diving deeper into discussions about technology and design!<br></p> <!-- Description about the person with additional information -->
+                <a href="#">GET TO KNOW ME</a> <!-- Link to get to know the person better (placeholder) -->
+            </div>
+            <div class="index-about-skill">
+                <!-- Skill bars section -->
+                <p>C++</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill C--"></div> <!-- Skill bar for C++ -->
+                </div>
+                <p>JAVA</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill Java"></div> <!-- Skill bar for Java -->
+                </div>
+                <p>MYSQL</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill MySQL"></div> <!-- Skill bar for MySQL -->
+                </div>
+                <p>HTML & CSS</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill htmlcss"></div> <!-- Skill bar for HTML & CSS -->
+                </div>
+                <p>ANIME STUDIO PRO 11</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill Anime"></div> <!-- Skill bar for Anime Studio -->
+                </div>
+                <p>C PROGRAMMING</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill C"></div> <!-- Skill bar for C Programming -->
+                </div>
+                <p>ADOBE CREATIVE SUITE</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill Adobe"></div> <!-- Skill bar for Adobe Creative Suite -->
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <!-- The footer section of our website -->
+    <footer class="footer-main">
+        <div class="wrapper-main footer-main-flex">
+            <!-- The testimony section of our website -->
+            <div class="footer-testimony">
+                <img src="/assets/Potraits/smiling-african.jpg" alt="Testimony" class="my-images"> <!-- Testimonial image -->
+                <p>"Kings Animations custom designs perfectly matched our vision. Highly recommended!"</p> <!-- Testimonial text -->
+            </div>
+            <div class="footer-testimony">
+                <img src="/assets/Potraits/young-female.jpg" alt="Testimony" class="my-images"> <!-- Testimonial image -->
+                <p>"Kings Animations exceeded my expectations, the creative flair is truly impressive."</p> <!-- Testimonial text -->
+            </div>
+            <div class="footer-testimony">
+                <img src="/assets/Potraits/african-female-soldier.jpg" alt="Testimony" class="my-images"> <!-- Testimonial image -->
+                <p>"Kings Animations exceeded our expectations from start to finish giving our business a distinct professional edge."</p> <!-- Testimonial text -->
+            </div>
+            <div class="footer-testimony">
+                <img src="/assets/Potraits/african-teenage-girl.jpg" alt="Testimony" class="my-images"> <!-- Testimonial image -->
+                <p>"Kings Animations delivered our project on time with outstanding quality. Looking forward to future collaborations."</p> <!-- Testimonial text -->
+            </div>
+            <div class="footer-testimony">
+                <img src="/assets/Potraits/beautiful-serious.jpg" alt="Testimony" class="my-images"> <!-- Testimonial image -->
+                <p>"Kings Animations brought a dynamic and captivating element to our presentations. Looking forward to future collaborations!"</p> <!-- Testimonial text -->
+            </div>
+
+            <!-- Contact Form -->
+            <div id="contact" class="contact-form-main"> <!-- Container for the contact form -->
+                <form action="submit_form.php" method="post"> <!-- Form for submitting contact information -->
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required> <!-- Input for first name -->
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required> <!-- Input for last name -->
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Email" required> <!-- Input for email -->
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Type a message..." required maxlength="1000"></textarea> <!-- Textarea for message -->
+
+                    <button type="submit">Send</button> <!-- Submit button for the form -->
+                </form>
+            </div>
+
+            <a class="footer-getintouch" href="#">GET IN TOUCH WITH ME</a> <!-- Link to contact or get in touch (placeholder) -->
+            <div class="footer-sitemap"> <!-- Container for the sitemap -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li> <!-- Link to home page (placeholder) -->
+                    <li><a href="#services">SERVICES</a></li> <!-- Link to gallery section (placeholder) -->
+                    <li><a href="#about">ABOUT ME</a></li> <!-- Link to about me section (placeholder) -->
+                    <li><a href="#contact">CONTACT ME</a></li> <!-- Link to contact section (placeholder) -->
+                </ul>
+                <ul>
+                    <li><a href="#">SOFTWARE ENGINEERING</a></li> <!-- Link to Software Engineering category (placeholder) -->
+                    <li><a href="#">WEB DEVELOPMENT</a></li> <!-- Link to Web Development category (placeholder) -->
+                    <li><a href="#">ANIMATION</a></li> <!-- Link to Animation category (placeholder) -->
+                    <li><a href="#">GRAPHIC DESIGN</a></li> <!-- Link to Graphic Design category (placeholder) -->
+                </ul>
+                <ul>
+                    <li><p>Ready to elevate your experience? Don’t wait—reach out today! Our team is eager to help you discover the perfect solutions tailored just for you.</p></li> <!-- Promotional text -->
+                </ul>
+                <ul>
+                    <li><p>GET IN TOUCH</p></li> <!-- Contact heading -->
+                    <li><p>+256701430234</p></li> <!-- Contact phone number -->
+                    <li class="email"><p>donkings659@gmail.com</p></li> <!-- Contact email address -->
+                    <li><p>Kampala, Uganda.</p></li> <!-- Contact location -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script> <!-- Link to JavaScript file for additional functionality -->
+
+</body>
+</html>
